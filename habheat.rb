@@ -5,20 +5,20 @@
 class Habheat < Formula
   desc "A simple terminal UI for habit tracking with Github like heat map, written in Go"
   homepage "https://github.com/metagunner/habheat/"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     on_intel do
-      url "https://github.com/metagunner/habheat/releases/download/v0.1.2/habheat_Darwin_x86_64.tar.gz"
-      sha256 "0d5349a8a268fa4f47cbdab7e322f4e8e883731755f92a09d1115f3c9824c27b"
+      url "https://github.com/metagunner/habheat/releases/download/v0.1.3/habheat_Darwin_x86_64.tar.gz"
+      sha256 "9b8360e4a837e8e2d1730b527fa49a513f1d1a6857f46603e11adae146c2ec8b"
 
       def install
         bin.install "habheat"
       end
     end
     on_arm do
-      url "https://github.com/metagunner/habheat/releases/download/v0.1.2/habheat_Darwin_arm64.tar.gz"
-      sha256 "bd488b73bc1a540bab1c7ab11c0a522c7a3c231b6ac67cf8797ff153d9ce9d2e"
+      url "https://github.com/metagunner/habheat/releases/download/v0.1.3/habheat_Darwin_arm64.tar.gz"
+      sha256 "f18fb661b9cd069d5fce2ec7badb391678f47e8aadbe7deaaa8236a6c05dfef3"
 
       def install
         bin.install "habheat"
@@ -29,8 +29,8 @@ class Habheat < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/metagunner/habheat/releases/download/v0.1.2/habheat_Linux_x86_64.tar.gz"
-        sha256 "e7bea1ac0b400a5a353d8ea6d28bacfaf1ebf5d456ac20b1ca63ec4dc5a6161c"
+        url "https://github.com/metagunner/habheat/releases/download/v0.1.3/habheat_Linux_x86_64.tar.gz"
+        sha256 "a40f4082929da2f86a689e1050dae83a5a34d0505fa04309347b1a9659a0e012"
 
         def install
           bin.install "habheat"
@@ -39,8 +39,8 @@ class Habheat < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/metagunner/habheat/releases/download/v0.1.2/habheat_Linux_arm64.tar.gz"
-        sha256 "beebda9c8c479dcbd2219449e6290439ff90cf6cd715c1297024a14657c9921c"
+        url "https://github.com/metagunner/habheat/releases/download/v0.1.3/habheat_Linux_arm64.tar.gz"
+        sha256 "8cbe534f93547adc6ba05d0b1a6e0633102e542893ce46d397afc0b6491cc408"
 
         def install
           bin.install "habheat"
